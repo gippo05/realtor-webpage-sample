@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
     <title>Gian Sarinas Homes - Real Estate Realtor</title>
@@ -18,39 +14,39 @@
      <header>
         <div class="navbar-container">
             <div class="logo">
-                        <img src="./assets/logo.webp" alt="logo">
+                        <img src="./assets/logo.webp" alt="logo" >
                     </div>
 
                     <div class="list-items">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Listings</a></li>
-                            <li><a href="#">Let's Move</a></li>
-                            <li><a href="#">About us</a></li>
-                        </ul>
+                            <a href="#">Home</a>
+                            <a href="#">Listings</a>
+                            <a href="#">Let's Move</a>
+                            <a href="#">About us</a>
                     </div>
         </div>
 
-        <div class="burger-menu">
-            <div class="list-items-burger">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Listings</a></li>
-                    <li><a href="#">Let's Move</a></li>
-                    <li><a href="#">About us</a></li>
-                </ul>
-            </div>
+        <div class="burger-icon">
+            <a href="#" onclick="showSideBar()"><img src="./assets/burger_icon.svg" alt="icon" class="b-icon"></a>
+        </div>
+        
+        <div class="burger-menu" id="burger-menu">
+                    <a href="#">Home</a>
+                    <a href="#">Listings</a>
+                    <a href="#">Let's Move</a>
+                    <a href="#">About us</a>
+                    <a href="#" onclick="closeSideBar()"><img src="./assets/close.svg" alt="close"></a>
         </div>
      </header>
 
     <!-- Background -->
-     <div class="background-container">
-        <h3>MARCI METZGER - THE RIDGE REALTY GROUP</h3>
-        <h2>Pahrump Realtor</h2>
-        <div class="background">
-            <!-- insert background through css -->
+     <div class="background-container"></div>
+     
+        <div class="background-text">
+            <h3>MARCI METZGER - THE RIDGE REALTY GROUP</h3>
+            <h2>Pahrump Realtor</h2>
         </div>
-     </div>
+        
+     
 
      <div class="home-container">
         <form action="#">

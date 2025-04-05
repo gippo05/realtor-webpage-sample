@@ -1,4 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Lato", sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* NAVBAR CSS */
+.navbar-container{
+    width: 100%;
+    background-color: #F9F6EE;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    height: 70px;
+    margin: 0px 0px 0px 40px;
+}
+.list-items{
+    margin-right: 20px;
+}
+.list-items a{
+    list-style: none;
+    float: left;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+.list-items a:hover{
+    background-color: burlywood;
+}
+@media screen and (max-width: 900px) {
+    .list-items a{
+        display: none;
+    }
+}
+/* END OF NAVBAR CSS */
+
+/* BURGER MENU CSS */
+.b-icon{
+    height: 35px;
+    margin: 10px 0px 0px 0px;
+    display: none;
+}
+.burger-menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgba(255, 235, 205, 0.11);
+    z-index: 999;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    padding-top:60px;
+    backdrop-filter: blur(10px);
+    transition: 0.2s;
+}
+.burger-menu a{
+    padding: 20px;;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    width: 100%;
+}
+.burger-menu a:hover{
+    background-color: wheat;
+}
+@media screen and (max-width: 900px) {
+    .b-icon{
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
+/* END OF BURGER MENU CSS */
+
+/* Background */
+.background-container{
+    background-image: url(./assets/dillon-kydd-2keCPb73aQY-unsplash.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-size:cover;
+    
+    
+}
+.background-text{
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* border: 3px solid #f1f1f1;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);  */
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+.background-text h3{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.background-text h2{
+    font-size: 1.5em;
+}
+/* end of background */
+
+/* Search Listings */
+.home-container{
+    border: 1px solid black;
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+.home-grid{
+    height: 50px;
+    width: 100%;
 }
