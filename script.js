@@ -1,3 +1,12 @@
+const date = new Date()
+let year = date.getFullYear();
+document.getElementById('year').innerHTML = year;
+
+
+
+
+
+
 
 function showSideBar(){
     const sidebar = document.getElementById('burger-menu')

@@ -336,6 +336,7 @@
 .services{
    position: absolute;
    color: #6f4e37;
+   padding-top: 10px;
 }
  .services-container{ 
     display: flex;
@@ -375,7 +376,8 @@
  .logos-container{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 0px 100px 0px;
+    margin: 20px 0px 0px 0px;
+    padding-bottom: 20px;
  }
  /* end */
 
@@ -420,4 +422,8 @@
  .footer{
     margin-bottom: 0;
     text-align: center;
+ }
+ .number{
+    color: burlywood;
+    font-weight: bolder;
  }
