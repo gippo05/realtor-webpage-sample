@@ -23,12 +23,13 @@
                             <a href="#">Listings</a>
                             <a href="#">Let's Move</a>
                             <a href="#">About us</a>
+                            <a href="#" onclick="showSideBar()"><img src="./assets/burger_icon.svg" alt="icon" class="b-icon"></a>
                     </div>
         </div>
 
         <div class="burger-icon">
-            <a href="#" onclick="showSideBar()"><img src="./assets/burger_icon.svg" alt="icon" class="b-icon"></a>
-        </div>
+            <!-- <a href="#" onclick="showSideBar()"><img src="./assets/burger_icon.svg" alt="icon" class="b-icon"></a>
+        </div> -->
         
         <div class="burger-menu" id="burger-menu">
                     <a href="#">Home</a>
@@ -87,11 +88,11 @@
      </div>
     
      <div class="about-container">
-                <div class="profile-picture">
+                <div class="profile-picture" id="profpic">
                     <img src="./assets/marci_metzger.webp" alt="marciphoto">
                 </div>
 
-                <div class="about-her">
+                <div class="about-her" id="abouther">
                         <p>
                             Marci was a REALTOR, then licensed Broker, in Washington State. 
                             Now, she is enjoying the sunshine, and helping clients in Southern Nevada.
@@ -178,11 +179,11 @@
     </div>
      <div class="main-parent">
         <div class="parent">
-            <div class="div1">
+            <div class="div" id="div1">
                 <img src="./assets/kitchen.webp" alt="kitchen">
             </div>
 
-            <div class="div2">
+            <div class="div" id="div2">
                 <h4>TOP RESIDENTIAL SALES IN THE LAST 5 YEARS</h4>
                 <p>We helped nearly 90 clients in 2021, and closed 28.5 million in sales! 
 
@@ -191,7 +192,7 @@
                     & we want to make sure our best is better every year.</p>
             </div>
 
-            <div class="div3">
+            <div class="div" id="div3">
                 <h4>DON'T JUST LIST IT...</h4>
                 <p>
                     Get it SOLD! We exhaust every avenue to ensure our listings are at the fingertips of 
@@ -199,16 +200,16 @@
                 </p>
             </div>
 
-            <div class="div4">
+            <div class="div" id="div4">
                 <img src="./assets/pool.webp" alt="pool">
             </div>
 
 
-            <div class="div5">
+            <div class="div" id="div5">
                 <img src="./assets/key.webp" alt="">
             </div>
 
-            <div class="div6">
+            <div class="div" id="div6">
                 <h4>EXCLUSIVE GUIDE TO BUYERS</h4>
                 <p>
                     Nobody knows the market like we do. Enjoy having a pro at your service. 
@@ -227,7 +228,7 @@
         <div class="services">
             <h2>OUR SERVICES</h2>
         </div>
-        <div class="flex-container">
+        <div class="flex-container grow">
             <img src="./assets/services_photos/Table.webp" alt="table">
             <h4>
                 Real Estate Done Right
@@ -240,7 +241,7 @@
             </p>
         </div>
 
-        <div class="flex-container">
+        <div class="flex-container grow">
             <img src="./assets/services_photos/garden.webp" alt="garden">
             <h4>
                 Commercial & Residential
@@ -252,7 +253,7 @@
             </p>
         </div>
 
-        <div class="flex-container">
+        <div class="flex-container grow">
             <img src="./assets/services_photos/handshake.webp" alt="handshake">
             <h4>
                 Rely on Expertise
@@ -312,8 +313,16 @@
                 <h3>Office Hours</h3>
 
                 <p>Monday to Friday 08:00AM - 07:00PM </p>
+                
             </div>
         </div>
+        <div class="social-logos">
+                <img src="./assets/facebook-svgrepo-com.svg" alt="svg" height="50px" class="grow">
+                <img src="./assets/instagram-167-svgrepo-com.svg" alt="svg" height="50px" class="grow">
+                <img src="./assets/linkedin-svgrepo-com.svg" alt="svg" height="50px" class="grow">
+                <img src="./assets/yelp-184-svgrepo-com.svg" alt="svg" height="50px" class="grow">
+        </div>
+        
         <p class="footer">Copyright ©<span id="year"></span> Marci METZGER Homes - All Rights Reserved. Made by Gian Sarinas(Assignment)</p>
      </div>
      
