@@ -186,6 +186,7 @@
 .background-text h2{
     font-size: 1.5em;
 }
+
 /* end of background */
 
 /* Search Listings */
@@ -240,22 +241,6 @@
     background-color: #ccc;
   }
 
-  @media screen and (max-width: 767px){
-    .background-text{
-        width: 600px;
-    }
-    .background-text h2{
-        font-size: 1rem;
-    }
-    .background-text h3{
-        font-size: 2rem;
-    }
-    .grid-container{
-        left: 0px;
-        margin: 20px;
-        top: 500px;
-    }
-  }
 /* END OF SEARCH LISTING */
 .enclosing-div{
     margin: 0px 0px 100px 0px;
@@ -500,3 +485,53 @@
     transform: scale(1.1); 
     
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 767px){
+    .background-text{
+        width: 400px;
+    }
+    .background-text h2{
+        font-size: 1rem;
+    }
+    .background-text h3{
+        font-size: 2rem;
+    }
+    .grid-container{
+        left: 0px;
+        top: 500px;
+        width: 420px;
+        border-radius: 0;
+    }
+    .enclosing-div{
+        flex-wrap: wrap;
+    }
+    .name-marci{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name-marci h2{
+        font-size: 2.2rem;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-her{
+        margin: 20px;
+    }
+    .featured-properties h2{
+        font-size: 2rem;
+    }
+    .featured-container{
+        display: flex;
+        flex-direction: column; 
+        max-width: 400px;
+    }
+    .image{
+        height: 50px;
+    }
+    
+  }
