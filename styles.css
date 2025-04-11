@@ -488,14 +488,25 @@
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 767px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo img{
+        margin: 0px 0px 0px 75px;
+    }
     .background-text{
-        width: 400px;
+        width: 350px;
+        margin: 0;
+        padding: 0;
     }
     .background-text h2{
         font-size: 1rem;
     }
     .background-text h3{
         font-size: 2rem;
+
     }
     .grid-container{
         left: 0px;
@@ -503,14 +514,13 @@
         width: 420px;
         border-radius: 0;
     }
-    .enclosing-div{
-        flex-wrap: wrap;
-    }
     .name-marci{
         width: 400px;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
+        padding: 0;
     }
     .name-marci h2{
         font-size: 2.2rem;
@@ -518,9 +528,7 @@
     .about-container{
         display: flex;
         flex-direction: column;
-    }
-    .about-her{
-        margin: 20px;
+        margin: 0;
     }
     .featured-properties h2{
         font-size: 2rem;
