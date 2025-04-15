@@ -56,12 +56,4 @@ window.addEventListener('scroll', () => {
         div5.classList.add("slideRight2")
         div6.classList.add("slideLeft2");
     }
-    // else{
-    //     div1.classList.remove("slideRight2");
-    //     div2.classList.remove("slideLeft2");
-    //     div3.classList.remove("slideRight2");
-    //     div4.classList.remove("slideLeft2");
-    //     div5.classList.remove("slideRight2");
-    //     div6.classList.remove("slideLeft2");
-    // }
 });

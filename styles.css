@@ -344,7 +344,8 @@
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
-    
+    margin: 0 auto;
+    padding: 0;
 }
 .parent{
     display: grid;
@@ -354,9 +355,13 @@
     gap: 20px;
     align-content: center;
     margin-top: 20px;
+    padding: 0;
 }
 .parent div > img{
-    height: 300px;
+    width: 100%; /* Scale to container width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure proper cropping if needed */
+    border-radius: 10px; 
  }
  .parent div{
     text-align: justify;
@@ -369,7 +374,6 @@
     display: flex;
     justify-content: center;
     color: #6f4e37;
-    margin: 20px;
  }
  /* end */
 
@@ -527,8 +531,7 @@
     }
     .about-container{
         display: flex;
-        flex-direction: column;
-        margin: 0;
+        flex-wrap: wrap;
     }
     .featured-properties h2{
         font-size: 2rem;
@@ -538,8 +541,31 @@
         flex-direction: column; 
         max-width: 400px;
     }
-    .image{
-        height: 50px;
+    .image {
+        width: 100%; /* Ensure it scales with the container */
+        height: auto; /* Maintain aspect ratio */
     }
-    
+    .featured-container div > img {
+        max-width: 100%;
+        height: auto;
+    }
+    .main-parent{
+        margin: 0;
+        padding: 0;
+    }
+    .parent{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .parent div>img{
+        height: 200px;
+    }
+    #div3{
+        order: 2;
+    }
+    #div4{
+        order: 1;
+    }
   }
