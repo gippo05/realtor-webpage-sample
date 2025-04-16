@@ -30,7 +30,7 @@ window.addEventListener('scroll', () => {
         profpic.classList.remove("slideRight");
         abouther.classList.remove("slideLeft");
     }
-    // alert(scrolled);
+
     
 });
 
