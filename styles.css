@@ -119,7 +119,9 @@
 /* BURGER MENU CSS */
 .b-icon{
     height: 35px;
-    /* margin: 10px 0px 0px 0px; */
+}
+.burger-icon{
+    display: none;
 }
 .burger-menu{
     position: fixed;
@@ -147,11 +149,16 @@
     background-color: wheat;
 }
 @media screen and (max-width: 900px) {
-    .b-icon{
+    .burger-icon{
         display: flex;
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 10px;
+        right: 975px;
+        width: auto;
+    }
+    .burgerICON{
+        height: 35px;
+        z-index: 999;
     }
 }
 /* END OF BURGER MENU CSS */
@@ -497,8 +504,11 @@
         padding: 0;
         box-sizing: border-box;
     }
+    body{
+        overflow-x: hidden;
+    }
     .logo img{
-        margin: 0px 0px 0px 75px;
+        margin: 0px 0px 0px 20px;
     }
     .background-text{
         width: 350px;
@@ -568,4 +578,70 @@
     #div4{
         order: 1;
     }
-  }
+    .services-container{
+        display: grid;
+    }
+    .flex-container{
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .services{
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #done{
+        margin-top: 50px;
+    }
+    #serve{
+        display: none;
+    }
+    .logos-container{
+        width: auto;
+        height: 80px;
+    }
+    .contact-container {
+        width: 100%;
+        padding: 20px;
+    }
+    .contact-container-form {
+        display: flex;
+        flex-direction: column; /* Stack form fields vertically */
+        gap: 20px;
+        margin: 0 auto;
+        width: 90%; /* Adjust width */
+    }
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .contact input {
+        width: 100%; /* Full width */
+        height: 40px; /* Adjust height */
+    }
+    .submit-btn {
+        width: 100%; /* Full width */
+        padding: 10px;
+        font-size: 1rem; /* Adjust font size */
+    }
+
+    /* Footer */
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #171717; /* Optional: Footer background color */
+        color: white; /* Optional: Footer text color */
+    }
+    
+    .social-logos {
+        display: none;
+    }
+    
+    .social-logos img:hover {
+        transform: scale(1.2); /* Optional: Enlarge icons on hover */
+    }
+}
